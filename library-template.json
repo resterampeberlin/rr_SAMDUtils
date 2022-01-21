@@ -1,0 +1,20 @@
+{
+    "name": "RR SAMD Utilities",
+    "version": "GIT_VERSION",
+    "description": "A library including useful utilities for Arduino development with SAMD architecture",
+    "keywords": "Debug, Logging",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/resterampeberlin/rr_SAMDUtils.git"
+    },
+    "authors": [
+        {
+            "name": "Markus Nickels",
+            "email": "markusnickels@mac.com",
+            "url": "https://github.com/resterampeberlin/rr_SAMDUtils"
+        }
+    ],
+    "license": "GPL-3.0-or-later",
+    "frameworks": "*",
+    "platforms": "*"
+}
