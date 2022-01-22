@@ -2,7 +2,10 @@
     "name": "RR SAMD Utilities",
     "version": "GIT_VERSION",
     "description": "A library including useful utilities for Arduino development with SAMD architecture",
-    "keywords": "Debug, Logging",
+    "keywords": [
+        "Timer",
+        "SAMD"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/resterampeberlin/rr_SAMDUtils.git"
@@ -16,5 +19,30 @@
     ],
     "license": "GPL-3.0-or-later",
     "frameworks": "*",
-    "platforms": "*"
+    "platforms": [
+        "atmelsam"
+    ],
+    "examples": [
+        {
+            "name": "Fast PWM",
+            "base": "examples/Fast PWM",
+            "files": [
+                "fastPWM.cpp"
+            ]
+        },
+        {
+            "name": "Slow PWM",
+            "base": "examples/Slow PWM",
+            "files": [
+                "slowPWM.cpp"
+            ]
+        },
+        {
+            "name": "Oneshot",
+            "base": "examples/Oneshot",
+            "files": [
+                "oneshot.cpp"
+            ]
+        }
+    ]
 }

@@ -52,13 +52,14 @@ class SAMDTCC {
     SAMDTCC(Tcc* newTimer);
 
     void setCC(unsigned channel, uint32_t value);
-    void setWaveGen(uint32_t wave, uint32_t overflow);
+    void setWaveGen(uint32_t wave, uint32_t newOverflow);
     void setOneShot(uint32_t NRE);
     void enableTCC(uint32_t prescaler);
     void retrigger(void);
 
   protected:
-    Tcc* timer;
+    Tcc*     timer;
+    uint32_t overflow;
 };
 
 #endif

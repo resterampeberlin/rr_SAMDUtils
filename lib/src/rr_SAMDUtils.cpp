@@ -71,7 +71,8 @@ void SAMDGCLK::feedTCC(uint32_t tcc) {
         };
 
 SAMDTCC::SAMDTCC() {
-    timer = NULL;
+    timer    = NULL;
+    overflow = 0;
 }
 
 SAMDTCC::SAMDTCC(Tcc* newTimer) : SAMDTCC() {
@@ -99,7 +100,9 @@ void SAMDsetPinFunction(unsigned pin, uint8_t function) {
 //! @param wave
 //! @param overflow
 //!
-void SAMDTCC::setWaveGen(uint32_t wave, uint32_t overflow) {
+void SAMDTCC::setWaveGen(uint32_t wave, uint32_t newOverflow) {
+    overflow = newOverflow;
+
     // Set wave generation, frequency and pulse lengths
     timer->WAVE.reg |= wave;
     SAMDTimerSync(timer, SYNCBUSY.bit.WAVE);
@@ -131,7 +134,7 @@ void SAMDTCC::setOneShot(uint32_t NRE) {
 //! @param value
 //!
 void SAMDTCC::setCC(unsigned channel, uint32_t value) {
-    timer->CC[channel].reg = value;
+    timer->CC[channel].reg = constrain(value, 0, overflow - 1);
     SAMDTimerSync(timer, SYNCBUSY.bit.CC0);
 }
 
