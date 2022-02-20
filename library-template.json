@@ -1,6 +1,5 @@
 {
-    "name": "RR SAMD Utilities",
-    "version": "GIT_VERSION",
+    "name": "RRSAMDUtilities",
     "description": "A library including useful utilities for Arduino development with SAMD architecture",
     "keywords": [
         "Timer",
@@ -17,7 +16,7 @@
             "url": "https://github.com/resterampeberlin/rr_SAMDUtils"
         }
     ],
-    "license": "CC-BY-NC-4.0    ",
+    "license": "CC-BY-SA-4.0",
     "frameworks": "*",
     "platforms": [
         "atmelsam"

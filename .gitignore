@@ -6,7 +6,7 @@
 .vscode/ipch
 
 # generated documentation
-doc
+docs
 
 # generated packages
 *.tar.gz
