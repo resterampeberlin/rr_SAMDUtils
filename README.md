@@ -19,4 +19,4 @@ This project has been inspired by the library "Arduino_SAMD21_turbo_PWM" by Osca
 
 This open source code project is has been proudfully producted in Berlin (and other places around the globe) by
 
-![Logo](Logo180x180.png)
+![Logo](img/Logo180x180.png)
