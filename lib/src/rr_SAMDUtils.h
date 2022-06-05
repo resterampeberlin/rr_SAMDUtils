@@ -1,9 +1,6 @@
 //!
-//! @file rr_SAMDUtils.h
 //! @author M. Nickels
 //! @brief low level routines for Arduino development on SAMD platform
-//! @version 0.1
-//! @date 2021-12-20
 //!
 //! @copyright Copyright (c) 2022
 //!

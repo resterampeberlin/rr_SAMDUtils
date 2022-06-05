@@ -1,9 +1,6 @@
 //!
-//! @file main.cpp
 //! @author M. Nickels
 //! @brief Main file for the Library "rr_SAMDUtils"
-//! @version 0.1
-//! @date 2021-12-20
 //!
 //! @copyright Copyright (c) 2021
 //!
